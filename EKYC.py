@@ -7,6 +7,7 @@ import random
 import dlib
 from scipy.spatial import distance as dist
 
+
 st.title('Finger Numbers Instructions')
 
 # Create a VideoCapture object for the default camera
