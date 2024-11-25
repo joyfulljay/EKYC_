@@ -33,7 +33,7 @@ contourpy==1.3.0
     # via matplotlib
 cycler==0.12.1
     # via matplotlib
-dlib==19.24.6
+#dlib==19.24.6
     # via -r requirements.in
 flatbuffers==24.3.25
     # via mediapipe
