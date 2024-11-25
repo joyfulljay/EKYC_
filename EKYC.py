@@ -4,7 +4,7 @@ import numpy as np
 import mediapipe as mp  # You may need to install this library using pip
 import time
 import random
-import dlib
+# import dlib
 from scipy.spatial import distance as dist
 
 
@@ -139,8 +139,11 @@ cap.release()
 
 # Load the pre-trained shape predictor model for facial landmarks
 shape_predictor_path = "shape_predictor_68_face_landmarks.dat"
-detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor(shape_predictor_path)
+
+detector = None
+predictor = None
+# detector = dlib.get_frontal_face_detector()
+# predictor = dlib.shape_predictor(shape_predictor_path)
 
 
 # Initialize MediaPipe Hands
