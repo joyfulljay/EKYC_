@@ -1,5 +1,5 @@
 import streamlit as st
-import cv2
+import opencv-python as cv2
 import numpy as np
 import mediapipe as mp  # You may need to install this library using pip
 import time
