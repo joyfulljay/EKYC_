@@ -98,7 +98,7 @@ numpy==1.26.4
     #   streamlit
 opencv-contrib-python==4.10.0.84
     # via mediapipe
-opencv-python==4.10.0.84
+opencv-python-headless
     # via -r requirements.in
 opt-einsum==3.4.0
     # via jax
