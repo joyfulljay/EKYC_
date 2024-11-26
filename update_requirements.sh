@@ -15,7 +15,13 @@ fi
 # Compile a new requirements.txt from requirements.in
 if [ -f requirements.in ]; then
     echo "Compiling requirements.txt from requirements.in..."
+    echo "Disk space before compilation:"
+    df -h
+    
     pip-compile requirements.in
+    
+    echo "Disk space after compilation:"
+    df -h
 
     if [ $? -eq 0 ]; then
         echo "Compilation complete! requirements.txt has been updated."
