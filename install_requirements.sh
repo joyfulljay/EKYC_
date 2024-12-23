@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Create a virtual environment
+virtualenv jenv -p python3
+source jenv/bin/activate
+
 # Upgrade pip to the latest version
 python -m pip install --upgrade pip
 
@@ -13,10 +17,6 @@ pip install pip-tools
 if [ -f "requirements.txt" ]; then
   echo "requirements.txt file content:"
   cat requirements.txt
-
-  # Create a virtual environment if requirements.txt is found
-  virtualenv jenv -p python3
-  source jenv/bin/activate
   
   # Install the dependencies from requirements.txt
   pip install -r requirements.txt
