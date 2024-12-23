@@ -6,8 +6,6 @@ cd "/root/jproject/EKYC_" || {
     exit 1
 }
 
-pip install pip-tools 
-
 # Remove the existing requirements.txt file if it exists
 if [ -f requirements.txt ]; then
     echo "Deleting existing requirements.txt..."
